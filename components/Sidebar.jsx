@@ -8,7 +8,7 @@ function Sidebar() {
     <>
       <div className='Sidebar-slot'>
         <div className='whitediv text-center'>
-          <img src="/logoPB.png" alt="logo PMM" />
+          <img src="/logoPB.png" className="d-block w-100" alt="logo PMM" />
           <Navigation
             className="Sidebar-Nav"
             // you can use your own router's api to get pathname

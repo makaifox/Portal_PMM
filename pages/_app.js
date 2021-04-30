@@ -1,12 +1,16 @@
 import '../styles/globals.css'
-import Sidebar from '../src/components/sidebar';
+import Sidebar from '../components/Sidebar';
+
 
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <Sidebar />
-      <Component {...pageProps} />
+      <div className="main_area">
+        <Sidebar />
+
+        <Component {...pageProps} />
+      </div>
     </>
   )
 }

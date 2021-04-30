@@ -1,13 +1,19 @@
 import Head from 'next/head'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Banner from '../src/components/banner';
+import Banner from '../components/Banner';
+import Search from '../components/Search'
+import responsive from '../components/Noticias'
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
+import Card from 'react-bootstrap/Card';
+import Footer from '../components/Footer'
 
 
 
 export default function Home() {
   return (
 
-    <div className="container text-center text-white">
+    <div className="container text-center main-page text-white">
 
       <Head>
         <title>Prefeitura Municipal de Mesquita - RJ</title>
@@ -15,23 +21,68 @@ export default function Home() {
         <link rel="icon" href="/logoPMM.png" />
       </Head>
 
-
+      <Search />
       <h3> Inicio </h3>
 
       <Banner />
+      <h3> Veja as últimas notícias </h3>
 
-      <footer class="page-footer font-small text-white fixed-bottom">
+      <Carousel responsive={responsive}>
+        <div>
+          <Card className="News">
 
+            <Card.Body>
+              <Card.Title>Card Title</Card.Title>
+              <Card.Text>
+                Some quick example text to build on the card title and make up the bulk of
+                the card's content.
+              </Card.Text>
 
-        <div class="footer-copyright text-center py-3">
-          <p>&copy;2021 | Todos os Direitos Reservados | PMM - Prefeitura de Mesquita | CNPJ: 04.132.090/0001-25</p>
-          <p> Desenvolvimento: </p>
-          <p> CCS - Coordenadoria de Comunicação Social </p>
-
+            </Card.Body>
+          </Card>
         </div>
+        <div>
+          <Card className="News">
 
+            <Card.Body>
+              <Card.Title>Card Title</Card.Title>
+              <Card.Text>
+                Some quick example text to build on the card title and make up the bulk of
+                the card's content.
+  </Card.Text>
 
-      </footer>
+            </Card.Body>
+          </Card>
+        </div>
+        <div>
+          <Card className="News">
+
+            <Card.Body>
+              <Card.Title>Card Title</Card.Title>
+              <Card.Text>
+                Some quick example text to build on the card title and make up the bulk of
+                the card's content.
+  </Card.Text>
+
+            </Card.Body>
+          </Card>
+        </div>
+        <div>
+          <Card className="News">
+
+            <Card.Body>
+              <Card.Title>Card Title</Card.Title>
+              <Card.Text>
+                Some quick example text to build on the card title and make up the bulk of
+                the card's content.
+  </Card.Text>
+
+            </Card.Body>
+          </Card>
+        </div>
+      </Carousel>
+
+      <Footer />
 
     </div>
 
