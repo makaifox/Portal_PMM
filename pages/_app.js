@@ -6,7 +6,7 @@ import Sidebar from '../components/Sidebar';
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <div className="main_area">
+      <div className="main_area ">
         <Sidebar />
 
         <Component {...pageProps} />

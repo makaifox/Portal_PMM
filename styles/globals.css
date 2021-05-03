@@ -12,7 +12,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-template-rows: auto;
-
+  
 }
 
 
@@ -28,11 +28,45 @@ a {
 
 .Sidebar-slot {
   width: 20vw;
-  /* max-width: 26.875rem; */
+  max-width: 22rem; 
   height: 100vh;
   position: fixed;
   padding: 2rem 1rem;
   grid-column-start: 1;
+  color: #646464 !important;
+  overflow: hidden;;
+}
+.logoPMM {
+  max-width: 15rem;
+}
+
+.side-navigation-panel *, .side-navigation-panel:after { 
+  font-weight: 700 !important;
+}
+
+.side-navigation-panel .side-navigation-panel-select .side-navigation-panel-select-wrap .side-navigation-panel-select-option-selected{
+  background-color: #00D2D2 !important;
+  border-radius: 2rem;
+  color: white !important;
+}
+.side-navigation-panel-select-option:hover{
+  color: #00D2D2 !important;
+  background-color: #ffffff!important;
+}
+.social-icon{
+  height: 2rem !important;
+  width: 2rem !important;
+  margin:0.2rem
+}
+.contato{
+font-size: 14px;
+}
+.side-navigation-panel .side-navigation-panel-select .side-navigation-panel-select-wrap .side-navigation-panel-select-option {
+  border: none !important;
+}
+
+.side-navigation-panel {
+  margin: 2rem 0 2rem 0 ;
 }
 
 .main-page{
