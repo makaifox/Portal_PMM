@@ -1,18 +1,26 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import InputGroup from 'react-bootstrap/inputgroup'
+import FormControl from 'react-bootstrap/FormControl'
+import Button from 'react-bootstrap/button'
 
 const Search = () => {
   return (
-    <div>
-      <div className="input-group ">
-        <input type="search" className="form-control main-search" placeholder="O que está procurando ?" aria-label="Search"
-          aria-describedby="search-addon" />
-        {/* <span class="input-group-text border-0" id="search-addon">
-          <i class="fas fa-search"></i>
-        </span> */}
-      </div>
-    </div>
+
+    <InputGroup className=" main-search ">
+
+      <FormControl
+        placeholder="O que está procurando ?"
+        aria-label="O que está procurando ?"
+        aria-describedby="basic-addon2"
+      />
+      <InputGroup.Append className='input-search'>
+        <Button className="search-bar">Pesquisar</Button>
+      </InputGroup.Append>
+    </InputGroup>
+
   )
 }
 

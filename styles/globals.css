@@ -13,6 +13,7 @@ body {
   grid-template-columns: 1fr 3fr;
   grid-template-rows: auto;
   
+  
 }
 
 
@@ -27,21 +28,22 @@ a {
 
 
 .Sidebar-slot {
-  width: 20vw;
-  max-width: 22rem; 
+  width: 16.5vw;
+  max-width: 17rem; 
   height: 100vh;
   position: fixed;
-  padding: 2rem 1rem;
+  padding: 0.625rem 0.625rem;
   grid-column-start: 1;
   color: #646464 !important;
   overflow: hidden;;
 }
 .logoPMM {
-  max-width: 15rem;
+  max-width: 100%;
 }
 
 .side-navigation-panel *, .side-navigation-panel:after { 
   font-weight: 700 !important;
+  font-size: 14px;
 }
 
 .side-navigation-panel .side-navigation-panel-select .side-navigation-panel-select-wrap .side-navigation-panel-select-option-selected{
@@ -54,19 +56,30 @@ a {
   background-color: #ffffff!important;
 }
 .social-icon{
-  height: 2rem !important;
-  width: 2rem !important;
+  height: 1.2rem !important;
+  width: 1.2rem !important;
   margin:0.2rem
 }
 .contato{
-font-size: 14px;
+  font-size: 12px;
+}
+
+.padding-div {
+  padding: 2rem 0;
+}
+.button {
+  background-color: #00D2D2 !important;
+  border-radius: 1rem !important;
+  padding: 1rem !important;
+  font-weight: 600!important;
+  border: none !important;
 }
 .side-navigation-panel .side-navigation-panel-select .side-navigation-panel-select-wrap .side-navigation-panel-select-option {
   border: none !important;
 }
 
 .side-navigation-panel {
-  margin: 2rem 0 2rem 0 ;
+  margin: 0.625rem 0 0.625rem 0 ;
 }
 
 .main-page{
@@ -78,15 +91,21 @@ font-size: 14px;
 }
 
   .whitediv {
-    padding: 3rem 2rem;
-  background-color: white !important;
-  height: 100% !important;
-  border-radius: 2rem;
+    padding: 1.25rem 1.15rem;
+    background-color: white !important;
+    height: 100% !important;
+    border-radius: 1rem;
   }
 
   .carousel-inner {
     border-radius: 2rem;
   }
+
+
+  .input-search{
+    border: none;
+  }
+
 
   .main-search {
     border-radius: 1rem !important;
@@ -96,10 +115,31 @@ font-size: 14px;
     grid-column-end:4 ;
     top: 0 !important;
   }
+  .search-bar{
+    background-color: #ffffff !important;
+    color: #00D2D2!important;
+    border: none !important;
+    font-weight: bold !important;
+  }
+  .react-multiple-carousel__arrow {
+    background-color: #00D2D2!important;
+  }
 
-  .News {
-    width: 14rem;
-    height: 15rem;
+  .react-multiple-carousel__arrow:hover {
+    background-color: #008585!important;
+  }
+
+  .Caculinha{
+    background-color: #1E2E46;
+    padding: 6rem 3rem;
+    border-radius: 2rem;
+  }
+
+  .acesso-rapido, .News {
+    width: 12rem;
+    height: 12rem;
+    padding: 2rem !important;
+    border-radius: 2rem !important;
   }
 
   .footer {
