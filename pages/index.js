@@ -14,6 +14,8 @@ import Col from 'react-bootstrap/col'
 
 
 
+
+
 export default function Home() {
   return (
 
@@ -23,6 +25,7 @@ export default function Home() {
         <title>Prefeitura Municipal de Mesquita - RJ</title>
         <meta name="description" content="Prefeitura Municipal de Mesquita - RJ" />
         <link rel="icon" href="/logoPMM.png" />
+
       </Head>
 
       <Search />

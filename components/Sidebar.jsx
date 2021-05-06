@@ -1,7 +1,6 @@
 import { Navigation } from 'react-minimal-side-navigation';
 import 'react-minimal-side-navigation/lib/ReactMinimalSideNavigation.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faUser, faChartBar, faUsers, faBullhorn, faEye, faComments, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { FaHome, FaUser, FaChartBar, FaUsers, FaBullhorn, FaEye, FaComments, FaEnvelope } from 'react-icons/fa';
 import { SocialIcon } from 'react-social-icons';
 
 
@@ -13,6 +12,9 @@ function Sidebar() {
       <div className='Sidebar-slot'>
         <div className='whitediv text-center'>
           <img src="/logoPB.png" className="d-block w-100 logoPMM" alt="logo PMM" />
+          <div className="mesquita">
+            <h3 className="h3"> MESQUITA </h3>
+          </div>
           <Navigation
             className="Sidebar-Nav"
             // you can use your own router's api to get pathname
@@ -26,47 +28,47 @@ function Sidebar() {
                 itemId: '/Inicio',
                 // you can use your own custom Icon component as well
                 // icon is optional
-                elemBefore: () => <FontAwesomeIcon icon={faHome} />,
+                elemBefore: () => <FaHome />,
               },
               {
                 title: 'Governo',
                 itemId: '/Governo',
-                elemBefore: () => <FontAwesomeIcon icon={faUser} />,
+                elemBefore: () => <FaUser />,
 
               },
               {
                 title: 'Serviços',
                 itemId: '/Servicos',
-                elemBefore: () => <FontAwesomeIcon icon={faChartBar} />,
+                elemBefore: () => <FaChartBar />,
               },
               {
                 title: 'Servidores',
                 itemId: '/Servidores',
-                elemBefore: () => <FontAwesomeIcon icon={faUsers} />,
+                elemBefore: () => <FaUsers />,
               },
               {
                 title: 'Comunicação',
                 itemId: '/Comunicação',
-                elemBefore: () => <FontAwesomeIcon icon={faBullhorn} />,
+                elemBefore: () => <FaBullhorn />,
               },
               {
                 title: 'Transparência',
                 itemId: '/Transparência',
-                elemBefore: () => <FontAwesomeIcon icon={faEye} />,
+                elemBefore: () => <FaEye />,
               },
               {
                 title: 'Chat',
                 itemId: '/Chat',
-                elemBefore: () => <FontAwesomeIcon icon={faComments} />,
+                elemBefore: () => <FaComments />,
               },
               {
                 title: 'Contato',
                 itemId: '/Contato',
-                elemBefore: () => <FontAwesomeIcon icon={faEnvelope} />,
+                elemBefore: () => <FaEnvelope />,
               },
             ]}
           />
-          <div className="row d-flex justify-content-center">
+          <div className="row d-flex justify-content-center ">
             <SocialIcon url="https://facebook.com/" bgColor="#00D2D2" />
             <SocialIcon url="https://twitter.com/" bgColor="#00D2D2" />
             <SocialIcon url="https://instagram.com/" bgColor="#00D2D2" />

@@ -32,13 +32,19 @@ a {
   max-width: 17rem; 
   height: 100vh;
   position: fixed;
-  padding: 0.625rem 0.625rem;
+  padding: 2rem 0.625rem;
   grid-column-start: 1;
   color: #646464 !important;
   overflow: hidden;;
 }
 .logoPMM {
   max-width: 100%;
+  padding: 1rem 2rem 0rem 2rem;
+}
+
+.mesquita h3 {
+  font-weight: 800;
+  color: #182C4A;
 }
 
 .side-navigation-panel *, .side-navigation-panel:after { 
@@ -65,7 +71,7 @@ a {
 }
 
 .padding-div {
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 .button {
   background-color: #00D2D2 !important;
@@ -109,11 +115,20 @@ a {
 
   .main-search {
     border-radius: 1rem !important;
-    padding: 1.5rem !important;
+    padding:  0.5rem  !important;
     position: absolute;
     grid-column-start: 2;
     grid-column-end:4 ;
     top: 0 !important;
+    background-color: white;
+  }
+
+  .main-search .form-control {
+    border: none;
+  }
+
+  .main-search .input-search {
+    color: #00D2D2;
   }
   .search-bar{
     background-color: #ffffff !important;
