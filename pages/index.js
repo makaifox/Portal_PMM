@@ -14,8 +14,6 @@ import Col from 'react-bootstrap/col'
 
 
 
-
-
 export default function Home() {
   return (
 

@@ -7,22 +7,23 @@ import { FaSearch } from 'react-icons/fa';
 
 const Search = () => {
   return (
+    <div className="fixed-top">
+      <InputGroup className=" main-search ">
+        <InputGroup.Append className='input-search'>
+          <FaSearch />
+        </InputGroup.Append>
 
-    <InputGroup className=" main-search ">
-      <InputGroup.Append className='input-search'>
-        <FaSearch />
-      </InputGroup.Append>
+        <FormControl
+          placeholder="O que está procurando ?"
+          aria-label="O que está procurando ?"
+          aria-describedby="basic-addon2"
+        />
+        <InputGroup.Append className='input-search'>
+          <Button className="search-bar">Pesquisar</Button>
+        </InputGroup.Append>
+      </InputGroup>
 
-      <FormControl
-        placeholder="O que está procurando ?"
-        aria-label="O que está procurando ?"
-        aria-describedby="basic-addon2"
-      />
-      <InputGroup.Append className='input-search'>
-        <Button className="search-bar">Pesquisar</Button>
-      </InputGroup.Append>
-    </InputGroup>
-
+    </div>
   )
 }
 
