@@ -1,12 +1,15 @@
 import { Navigation } from 'react-minimal-side-navigation';
+import { useRouter } from 'next/router'
 import 'react-minimal-side-navigation/lib/ReactMinimalSideNavigation.css';
 import { FaHome, FaUser, FaChartBar, FaUsers, FaBullhorn, FaEye, FaComments, FaEnvelope } from 'react-icons/fa';
 import { SocialIcon } from 'react-social-icons';
+import Link from 'next/link'
 
 
 
 
 function Sidebar() {
+  const router = useRouter()
   return (
     <>
       <div className='Sidebar-slot'>
@@ -18,8 +21,9 @@ function Sidebar() {
           <Navigation
             className="Sidebar-Nav"
             // you can use your own router's api to get pathname
-            activeItemId="/Inicio"
+            activeItemId={router.pathname}
             onSelect={({ itemId }) => {
+              router.push();
               // maybe push to the route
             }}
             items={[
@@ -32,9 +36,26 @@ function Sidebar() {
               },
               {
                 title: 'Governo',
-                itemId: '/Governo',
+                itemId: '/governo',
                 elemBefore: () => <FaUser />,
-
+                subNav: [
+                  {
+                    title: 'Gestão Municipal',
+                    itemId: '/governo/Gestao',
+                  },
+                  {
+                    title: 'Secretarias',
+                    itemId: '/governo/secretarias',
+                  },
+                  {
+                    title: 'Órgãos e Autarquias',
+                    itemId: '/governo/orgaos',
+                  },
+                  {
+                    title: 'Procuradoria e Controladoria',
+                    itemId: '/governo/procuradoria',
+                  },
+                ],
               },
               {
                 title: 'Serviços',
@@ -68,6 +89,7 @@ function Sidebar() {
               },
             ]}
           />
+
           <div className="row d-flex justify-content-center ">
             <SocialIcon url="https://facebook.com/" bgColor="#00D2D2" />
             <SocialIcon url="https://twitter.com/" bgColor="#00D2D2" />
@@ -83,6 +105,7 @@ function Sidebar() {
       </div>
     </>
   );
+
 }
 
 export default Sidebar;
